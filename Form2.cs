@@ -531,6 +531,7 @@ namespace ProiectTetris2
             }
         }
 
+        #region tasta si ceas
         private void Jocul_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
             switch (e.KeyCode)
@@ -632,5 +633,6 @@ namespace ProiectTetris2
             string s = reclamele[r];
             reclame.Image = Image.FromFile(s);
         }
+        #endregion
     }
 }

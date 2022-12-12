@@ -33,8 +33,11 @@ namespace ProiectTetris2
             {
                 nume.Text = "Buna, " + Program.contActual.username + "!";
             }
-            else button5.Text = "Inapoi";
-
+            else
+            {
+                button1.Enabled = false;
+                button5.Text = "Inapoi";
+            }
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -62,6 +65,13 @@ namespace ProiectTetris2
             var joc = new Jocul(nivel);
             joc.Show();
             this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Shop sh = new Shop();
+            this.Close();
+            sh.Show();
         }
     }
 }
