@@ -352,7 +352,7 @@ namespace ProiectTetris2
                         if (r <= 0)
                         {
                             timer1.Enabled = false;
-                         //   pictureBox1.Visible = true;
+                            pictureBox1.Visible = true;
                         }
                         else
                         {
@@ -602,7 +602,7 @@ namespace ProiectTetris2
                 if (ajunsJos(forma))
                 {
                     timer1.Enabled = false;
-                    //pictureBox1.Show();
+                    pictureBox1.Show();
                     ScoruriTop st = new ScoruriTop(Scor.Text);
                     st.Show();
                     this.Close();
@@ -614,6 +614,11 @@ namespace ProiectTetris2
                 forma.rand += 1;
                 this.Refresh();
             }
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
 
         }
     }

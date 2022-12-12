@@ -29,10 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Jocul));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.Scor = new System.Windows.Forms.Label();
             this.nume = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.reclame = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reclame)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -70,22 +75,47 @@
             this.nume.TabIndex = 3;
             this.nume.Text = "Vizitatorul";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(982, 863);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Visible = false;
+            // 
+            // reclame
+            // 
+            this.reclame.Image = ((System.Drawing.Image)(resources.GetObject("reclame.Image")));
+            this.reclame.Location = new System.Drawing.Point(12, 748);
+            this.reclame.Name = "reclame";
+            this.reclame.Size = new System.Drawing.Size(960, 101);
+            this.reclame.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.reclame.TabIndex = 5;
+            this.reclame.TabStop = false;
+            // 
             // Jocul
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 961);
+            this.ClientSize = new System.Drawing.Size(984, 861);
+            this.Controls.Add(this.reclame);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.nume);
             this.Controls.Add(this.Scor);
             this.Controls.Add(this.label1);
             this.KeyPreview = true;
-            this.MinimumSize = new System.Drawing.Size(1000, 1000);
+            this.MinimumSize = new System.Drawing.Size(1000, 900);
             this.Name = "Jocul";
             this.Text = "Jocul Tetris";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Jocul_Paint);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Jocul_KeyDown);
             this.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.Jocul_PreviewKeyDown);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reclame)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -97,5 +127,7 @@
         private Label label1;
         private Label Scor;
         private Label nume;
+        private PictureBox pictureBox1;
+        private PictureBox reclame;
     }
 }
