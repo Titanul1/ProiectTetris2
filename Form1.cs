@@ -51,11 +51,9 @@ namespace ProiectTetris2
             string JSONconturi = System.IO.File.ReadAllText("C:/Users/Dell/source/repos/ProiectTetris2/Conturi.txt");
             Program.Conturi conturi = JsonSerializer.Deserialize<Program.Conturi>(JSONconturi);
             Program.listaConturi = conturi;
-            string JSONjucatori = System.IO.File.ReadAllText("C:/Users/Dell/source/repos/ProiectTetris2/Jucatori.txt");
-            Program.Jucatori jucatori = JsonSerializer.Deserialize<Program.Jucatori>(JSONjucatori);
             string JSONproduse = System.IO.File.ReadAllText("C:/Users/Dell/source/repos/ProiectTetris2/produse.txt");
-            Program.Produse produse = JsonSerializer.Deserialize<Program.Produse>(JSONproduse);
-            Program.listaProduselor = produse;
+            Program.Produse clasaProduse = JsonSerializer.Deserialize<Program.Produse>(JSONproduse);
+            Program.listaProduselor = clasaProduse;
         }
 
         private void button2_Click(object sender, EventArgs e)

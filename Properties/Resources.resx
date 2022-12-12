@@ -118,22 +118,61 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Game Over" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Game Over.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Tetris" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tetris.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="reclama1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reclama1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Fara reclame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fara reclame.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="profil3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\profil3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="profil4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\profil4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="meniu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\meniu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Tetris" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Tetris.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="profil2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\profil2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\shop.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="profil5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\profil5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Game Over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Game Over.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="profil3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\profil3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="profil1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\profil1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Skip.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reclama1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reclama1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Laser" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Laser.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="profil31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\profil3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bagheta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bagheta.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Remove line" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Remove line.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="W" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\W.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BombaB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BombaB.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="T-Gold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\T-Gold.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

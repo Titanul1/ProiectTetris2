@@ -34,10 +34,10 @@ namespace ProiectTetris2
             if (Program.contActual != null)
             {
                 nume.Text = "Buna, " + Program.contActual.username + "!";
-                //string n = Program.listaJucatori.jucatori[Program.contActual.id - 1].numePersonal;
-                //MessageBox.Show(n);
-                int codpoza = 6;//Program.listaJucatori.jucatori[Program.contActual.id - 1].pozaProfil;
-                pictureBox1.Image = Image.FromFile(pozeadrese[codpoza-1]); //cod produs este 1 mai mult decat lista pentru ca index la lista este 1 mai mic decat cod produs
+                int codpoza = Program.contActual.pozaProfil;
+                pictureBox1.Image = Image.FromFile(pozeadrese[codpoza]);
+                BaniLB.Text = "Bani: " + Program.contActual.bani;
+                XPLB.Text = "XP: " + Program.contActual.xp;
             }
             else
             {

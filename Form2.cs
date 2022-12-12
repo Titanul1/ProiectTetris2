@@ -79,6 +79,11 @@ namespace ProiectTetris2
             forma.tipForma = formaAleatorie();
             timer1.Enabled = true;
             timer2.Enabled = true;
+            if (Program.contActual != null)
+            {   
+                string[] pozepath = System.IO.File.ReadAllLines("C:/Users/Dell/source/repos/ProiectTetris2/AdresePozelor.txt");
+                pictureBox2.Image = Image.FromFile(pozepath[Program.contActual.pozaProfil]);
+            }
         }
 
         private void initializare()
@@ -634,5 +639,21 @@ namespace ProiectTetris2
             reclame.Image = Image.FromFile(s);
         }
         #endregion
+
+        private void label2_MouseClick(object sender, MouseEventArgs e)
+        {
+            Meniu m = new Meniu();
+            this.Close();
+            m.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void textBox1_MouseClick(object sender, MouseEventArgs e)
+        {
+
+        }
     }
 }

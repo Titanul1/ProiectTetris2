@@ -1,6 +1,6 @@
-﻿C:\Users\Dell\source\repos\ProiectTetris2\profil1.jpg
+﻿C:\Users\Dell\source\repos\ProiectTetris2\profil0.jpg
+C:\Users\Dell\source\repos\ProiectTetris2\profil1.jpg
 C:\Users\Dell\source\repos\ProiectTetris2\profil2.jpg
 C:\Users\Dell\source\repos\ProiectTetris2\profil3.jpg
 C:\Users\Dell\source\repos\ProiectTetris2\profil4.jpg
 C:\Users\Dell\source\repos\ProiectTetris2\profil5.jpg
-C:\Users\Dell\source\repos\ProiectTetris2\profil6.jpg

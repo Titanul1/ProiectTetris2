@@ -39,6 +39,8 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.BaniLB = new System.Windows.Forms.Label();
+            this.XPLB = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -49,7 +51,7 @@
             this.nume.BackColor = System.Drawing.Color.Transparent;
             this.nume.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.nume.ForeColor = System.Drawing.Color.White;
-            this.nume.Location = new System.Drawing.Point(189, 18);
+            this.nume.Location = new System.Drawing.Point(152, 19);
             this.nume.Name = "nume";
             this.nume.Size = new System.Drawing.Size(353, 55);
             this.nume.TabIndex = 0;
@@ -169,6 +171,26 @@
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
+            // BaniLB
+            // 
+            this.BaniLB.AutoSize = true;
+            this.BaniLB.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BaniLB.Location = new System.Drawing.Point(173, 330);
+            this.BaniLB.Name = "BaniLB";
+            this.BaniLB.Size = new System.Drawing.Size(99, 31);
+            this.BaniLB.TabIndex = 9;
+            this.BaniLB.Text = "Bani: 0";
+            // 
+            // XPLB
+            // 
+            this.XPLB.AutoSize = true;
+            this.XPLB.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.XPLB.Location = new System.Drawing.Point(173, 373);
+            this.XPLB.Name = "XPLB";
+            this.XPLB.Size = new System.Drawing.Size(80, 31);
+            this.XPLB.TabIndex = 10;
+            this.XPLB.Text = "XP: 0";
+            // 
             // Meniu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -176,6 +198,8 @@
             this.BackgroundImage = global::ProiectTetris2.Properties.Resources.meniu;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(616, 637);
+            this.Controls.Add(this.XPLB);
+            this.Controls.Add(this.BaniLB);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -208,5 +232,7 @@
         private Button button5;
         private Button button6;
         private PictureBox pictureBox1;
+        private Label BaniLB;
+        private Label XPLB;
     }
 }

@@ -1,7 +1,13 @@
-﻿{"Produse":[
-{"prodID":1,"numeProdus":"Scoate Reclame","pretBani":100,"pretXP":300},
-{"prodID":2,"numeProdus":"Glumet","pretBani":300,"pretXP":600},
-{"prodID":3,"numeProdus":"Elegant","pretBani":600,"pretXP":800},
-{"prodID":4,"numeProdus":"Inocent","pretBani":600,"pretXP":800},
-{"prodID":5,"numeProdus":"Regal","pretBani":1000,"pretXP":1200},
-{"prodID":6,"numeProdus":"Smecheras","pretBani":1500,"pretXP":2000}]}
+﻿{"produse":[{"prodID":1,"numeProdus":"Glumet","pretBani":300,"pretXP":600},
+{"prodID":2,"numeProdus":"Elegant","pretBani":600,"pretXP":800},
+{"prodID":3,"numeProdus":"Inocent","pretBani":600,"pretXP":800},
+{"prodID":4,"numeProdus":"Regal","pretBani":1000,"pretXP":1200},
+{"prodID":5,"numeProdus":"Smecheras","pretBani":1500,"pretXP":2000},
+{"prodID":6,"numeProdus":"Alegere","pretBani":3000,"pretXP":4000},
+{"prodID":7,"numeProdus":"Scoate Reclame","pretBani":100,"pretXP":300},
+{"prodID":8,"numeProdus":"Bomba Bombelor","pretBani":1000,"pretXP":2000},
+{"prodID":9,"numeProdus":"Bagheta la comanda","pretBani":800,"pretXP":1600},
+{"prodID":10,"numeProdus":"Skip","pretBani":800,"pretXP":1600},
+{"prodID":11,"numeProdus":"Elimina un rand","pretBani":600,"pretXP":2000},
+{"prodID":12,"numeProdus":"Laser","pretBani":1000,"pretXP":2000}
+]}

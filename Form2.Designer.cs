@@ -36,8 +36,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.reclame = new System.Windows.Forms.PictureBox();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reclame)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -85,13 +88,14 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Visible = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // reclame
             // 
             this.reclame.Image = global::ProiectTetris2.Properties.Resources.reclama1;
             this.reclame.Location = new System.Drawing.Point(12, 748);
             this.reclame.Name = "reclame";
-            this.reclame.Size = new System.Drawing.Size(960, 101);
+            this.reclame.Size = new System.Drawing.Size(779, 101);
             this.reclame.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.reclame.TabIndex = 5;
             this.reclame.TabStop = false;
@@ -100,11 +104,36 @@
             // 
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(807, 748);
+            this.label2.Name = "label2";
+            this.label2.Padding = new System.Windows.Forms.Padding(20);
+            this.label2.Size = new System.Drawing.Size(156, 82);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Inapoi";
+            this.label2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label2_MouseClick);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::ProiectTetris2.Properties.Resources.profil3;
+            this.pictureBox2.Location = new System.Drawing.Point(47, 100);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(165, 156);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
+            // 
             // Jocul
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 861);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.reclame);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.nume);
@@ -120,6 +149,7 @@
             this.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.Jocul_PreviewKeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.reclame)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,5 +164,7 @@
         private PictureBox pictureBox1;
         private PictureBox reclame;
         private System.Windows.Forms.Timer timer2;
+        private Label label2;
+        private PictureBox pictureBox2;
     }
 }

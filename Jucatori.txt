@@ -1,6 +1,0 @@
-{"jucatori":
-[{"id":1,"numePersonal":"Antonio","pozaProfil":4,"bani":500,"xp":800,"produseCumparate":[0,3,4,5]},
-{"id":2,"numePersonal":"Printesa Hanna","pozaProfil":2,"bani":200,"xp":300,"produseCumparate":[0,1,2,3,4]},
-{"id":3,"numePersonal":"Gigel Boss","pozaProfil":5,"bani":0,"xp":2000,"produseCumparate":[3,5]},
-{"id":4,"numePersonal":"Omul Pesterii","pozaProfil":6,"bani":0,"xp":100,"produseCumparate":[3,6]}]
-}

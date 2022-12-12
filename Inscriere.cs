@@ -48,16 +48,14 @@ namespace ProiectTetris2
                 Program.Cont nouCont = new Program.Cont();
                 nouCont.username = userN.Text;
                 nouCont.parola = pw2.Text;
-                nouCont.id = Program.listaConturi.conturi.Count + 1;
+                nouCont.id = Program.listaConturi.conturi.Count; //pentru ca numaram id de la 0, .Count ne da urmatorul numar nefolosit
+                nouCont.pozaProfil = 0;
+                nouCont.bani = 0;
+                nouCont.xp = 0;
+                nouCont.produseCumparate = new List<int>();
+                nouCont.produseCumparate.Add(0);
                 Program.listaConturi.conturi.Add(nouCont);
                 System.IO.File.WriteAllText("C:/Users/Dell/source/repos/ProiectTetris2/Conturi.txt", JsonSerializer.Serialize(Program.listaConturi));
-                Program.Jucator nouJucator = new Program.Jucator();
-                nouJucator.numePersonal = userN.Text;
-                nouJucator.pozaProfil = 3;
-                nouJucator.bani = 0;
-                nouJucator.xp = 0;
-                nouJucator.produseCumparate = new List<int>();
-                nouJucator.produseCumparate.Add(3);
                 MessageBox.Show("Contul a fost creat!");
                 this.Close();
                 Form1 f1 = new Form1();
