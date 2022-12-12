@@ -52,6 +52,7 @@
             this.passwordtb.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.passwordtb.Location = new System.Drawing.Point(154, 255);
             this.passwordtb.Name = "passwordtb";
+            this.passwordtb.PasswordChar = '*';
             this.passwordtb.Size = new System.Drawing.Size(257, 29);
             this.passwordtb.TabIndex = 1;
             // 

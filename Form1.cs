@@ -48,7 +48,7 @@ namespace ProiectTetris2
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            string JSONconturi = System.IO.File.ReadAllText("C:/Users/Dell/source/repos/ProiectTetris/Conturi.txt");
+            string JSONconturi = System.IO.File.ReadAllText("C:/Users/Dell/source/repos/ProiectTetris2/Conturi.txt");
             Program.Conturi conturi = JsonSerializer.Deserialize<Program.Conturi>(JSONconturi);
             Program.listaConturi = conturi;
 
@@ -63,7 +63,7 @@ namespace ProiectTetris2
 
         private void Inscrie_Click(object sender, EventArgs e)
         {
-            Inscriere ins = new Inscriere();
+            W ins = new W();
             ins.Show();
             this.Hide();
         }
