@@ -16,6 +16,7 @@ namespace ProiectTetris2
         {
             InitializeComponent();
             timer1.Interval = 1300 - nivel * 400;
+            timer2.Interval = 3000;
         }
 
 #region declar culori, forme, puncte pentru a desena
@@ -35,6 +36,7 @@ namespace ProiectTetris2
         public static List<List<(int, int)>> J = new List<List<(int, int)>>();
         public static List<List<(int, int)>> S = new List<List<(int, int)>>();
         public static List<List<(int, int)>> Z = new List<List<(int, int)>>();
+        string[] reclamele = System.IO.File.ReadAllLines("C:/Users/Dell/source/repos/ProiectTetris2/reclame.txt");
 
         public struct Punct
         {
@@ -76,6 +78,7 @@ namespace ProiectTetris2
             forma.config = 0;
             forma.tipForma = formaAleatorie();
             timer1.Enabled = true;
+            timer2.Enabled = true;
         }
 
         private void initializare()
@@ -619,7 +622,15 @@ namespace ProiectTetris2
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+        }
 
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            var rand = new Random();
+            int r = rand.Next(reclamele.Length);
+            string s = reclamele[r];
+            reclame.Image = Image.FromFile(s);
         }
     }
 }

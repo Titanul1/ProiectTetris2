@@ -36,6 +36,7 @@
             this.nume = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.reclame = new System.Windows.Forms.PictureBox();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reclame)).BeginInit();
             this.SuspendLayout();
@@ -96,6 +97,10 @@
             this.reclame.TabIndex = 5;
             this.reclame.TabStop = false;
             // 
+            // timer2
+            // 
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
             // Jocul
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -129,5 +134,6 @@
         private Label nume;
         private PictureBox pictureBox1;
         private PictureBox reclame;
+        private System.Windows.Forms.Timer timer2;
     }
 }
