@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Meniu));
             this.nume = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
@@ -47,8 +46,10 @@
             // nume
             // 
             this.nume.AutoSize = true;
+            this.nume.BackColor = System.Drawing.Color.Transparent;
             this.nume.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.nume.Location = new System.Drawing.Point(78, 22);
+            this.nume.ForeColor = System.Drawing.Color.White;
+            this.nume.Location = new System.Drawing.Point(189, 18);
             this.nume.Name = "nume";
             this.nume.Size = new System.Drawing.Size(353, 55);
             this.nume.TabIndex = 0;
@@ -56,15 +57,18 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.groupBox1.Controls.Add(this.radioButton3);
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Location = new System.Drawing.Point(324, 113);
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.Location = new System.Drawing.Point(416, 107);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(146, 116);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Alege nivelul:";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // radioButton3
             // 
@@ -103,7 +107,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(298, 327);
+            this.button1.Location = new System.Drawing.Point(390, 321);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(195, 67);
             this.button1.TabIndex = 2;
@@ -114,7 +118,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(298, 254);
+            this.button2.Location = new System.Drawing.Point(390, 248);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(195, 67);
             this.button2.TabIndex = 3;
@@ -125,7 +129,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button3.Location = new System.Drawing.Point(298, 400);
+            this.button3.Location = new System.Drawing.Point(390, 394);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(195, 67);
             this.button3.TabIndex = 4;
@@ -136,7 +140,7 @@
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button5.Location = new System.Drawing.Point(298, 473);
+            this.button5.Location = new System.Drawing.Point(390, 467);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(195, 67);
             this.button5.TabIndex = 6;
@@ -147,7 +151,7 @@
             // button6
             // 
             this.button6.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button6.Location = new System.Drawing.Point(298, 546);
+            this.button6.Location = new System.Drawing.Point(390, 540);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(195, 67);
             this.button6.TabIndex = 7;
@@ -157,8 +161,8 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(43, 113);
+            this.pictureBox1.Image = global::ProiectTetris2.Properties.Resources.profil3;
+            this.pictureBox1.Location = new System.Drawing.Point(152, 107);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(216, 187);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -169,7 +173,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(528, 637);
+            this.BackgroundImage = global::ProiectTetris2.Properties.Resources.meniu;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(616, 637);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);

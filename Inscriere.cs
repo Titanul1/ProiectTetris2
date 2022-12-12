@@ -51,11 +51,23 @@ namespace ProiectTetris2
                 nouCont.id = Program.listaConturi.conturi.Count + 1;
                 Program.listaConturi.conturi.Add(nouCont);
                 System.IO.File.WriteAllText("C:/Users/Dell/source/repos/ProiectTetris2/Conturi.txt", JsonSerializer.Serialize(Program.listaConturi));
+                Program.Jucator nouJucator = new Program.Jucator();
+                nouJucator.numePersonal = userN.Text;
+                nouJucator.pozaProfil = 3;
+                nouJucator.bani = 0;
+                nouJucator.xp = 0;
+                nouJucator.produseCumparate = new List<int>();
+                nouJucator.produseCumparate.Add(3);
                 MessageBox.Show("Contul a fost creat!");
                 this.Close();
                 Form1 f1 = new Form1();
                 f1.Show();
             }
+
+        }
+
+        private void W_Load(object sender, EventArgs e)
+        {
 
         }
     }

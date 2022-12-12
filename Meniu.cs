@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.Json;
 
 namespace ProiectTetris2
 {
@@ -29,9 +30,14 @@ namespace ProiectTetris2
 
         private void Meniu_Load(object sender, EventArgs e)
         {
+            string[] pozeadrese = System.IO.File.ReadAllLines("C:/Users/Dell/source/repos/ProiectTetris2/AdresePozelor.txt");
             if (Program.contActual != null)
             {
                 nume.Text = "Buna, " + Program.contActual.username + "!";
+                //string n = Program.listaJucatori.jucatori[Program.contActual.id - 1].numePersonal;
+                //MessageBox.Show(n);
+                int codpoza = 6;//Program.listaJucatori.jucatori[Program.contActual.id - 1].pozaProfil;
+                pictureBox1.Image = Image.FromFile(pozeadrese[codpoza-1]); //cod produs este 1 mai mult decat lista pentru ca index la lista este 1 mai mic decat cod produs
             }
             else
             {
@@ -72,6 +78,11 @@ namespace ProiectTetris2
             Shop sh = new Shop();
             this.Close();
             sh.Show();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

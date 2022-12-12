@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(W));
             this.userN = new System.Windows.Forms.TextBox();
             this.pw1 = new System.Windows.Forms.TextBox();
             this.pw2 = new System.Windows.Forms.TextBox();
@@ -131,7 +130,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::ProiectTetris2.Properties.Resources.W;
             this.ClientSize = new System.Drawing.Size(503, 497);
             this.Controls.Add(this.inapoi);
             this.Controls.Add(this.Gata);
@@ -144,6 +143,7 @@
             this.DoubleBuffered = true;
             this.Name = "W";
             this.Text = "Inscriere";
+            this.Load += new System.EventHandler(this.W_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

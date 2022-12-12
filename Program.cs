@@ -20,6 +20,38 @@ namespace ProiectTetris2
             public string parola { get; set; }
         }
 
+        public class Jucator
+        {
+            public int id { get; set; }
+            public string numePersonal { get; set; }
+            public int pozaProfil { get; set; }
+            public int bani { get; set; }
+            public int xp { get; set; }
+            public List <int> produseCumparate { get; set; }
+
+        }
+        public class Jucatori
+        {
+            public List<Jucator> jucatori { get; set; }
+        }
+
+        public static Jucatori listaJucatori;
+
+        public class Produs
+        {
+            int prodID { get; set; }
+            string numeProdus { get; set; }
+            int pretBani { get; set; }
+            int pretXP { get; set; }
+        }
+
+        public class Produse
+        {
+            public List<Produs> produse { get; set; }
+        }
+
+        public static Produse listaProduselor;
+
         public static Cont contActual;
         [STAThread]
         static void Main()

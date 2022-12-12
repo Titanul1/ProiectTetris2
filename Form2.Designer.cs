@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Jocul));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.Scor = new System.Windows.Forms.Label();
@@ -78,7 +77,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImage = global::ProiectTetris2.Properties.Resources.Game_Over;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
@@ -89,7 +88,7 @@
             // 
             // reclame
             // 
-            this.reclame.Image = ((System.Drawing.Image)(resources.GetObject("reclame.Image")));
+            this.reclame.Image = global::ProiectTetris2.Properties.Resources.reclama1;
             this.reclame.Location = new System.Drawing.Point(12, 748);
             this.reclame.Name = "reclame";
             this.reclame.Size = new System.Drawing.Size(960, 101);
