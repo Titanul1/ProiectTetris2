@@ -28,21 +28,74 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.Scor = new System.Windows.Forms.Label();
+            this.nume = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Algerian", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(763, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(168, 54);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Score";
+            // 
+            // Scor
+            // 
+            this.Scor.AutoSize = true;
+            this.Scor.Font = new System.Drawing.Font("Algerian", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Scor.Location = new System.Drawing.Point(825, 100);
+            this.Scor.Name = "Scor";
+            this.Scor.Size = new System.Drawing.Size(51, 54);
+            this.Scor.TabIndex = 2;
+            this.Scor.Text = "0";
+            this.Scor.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // nume
+            // 
+            this.nume.AutoSize = true;
+            this.nume.Font = new System.Drawing.Font("Algerian", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.nume.Location = new System.Drawing.Point(12, 34);
+            this.nume.Name = "nume";
+            this.nume.Size = new System.Drawing.Size(233, 39);
+            this.nume.TabIndex = 3;
+            this.nume.Text = "Vizitatorul";
             // 
             // Jocul
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 961);
+            this.Controls.Add(this.nume);
+            this.Controls.Add(this.Scor);
+            this.Controls.Add(this.label1);
+            this.KeyPreview = true;
             this.MinimumSize = new System.Drawing.Size(1000, 1000);
             this.Name = "Jocul";
             this.Text = "Jocul Tetris";
             this.Load += new System.EventHandler(this.Form2_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Jocul_Paint);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Jocul_KeyDown);
+            this.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.Jocul_PreviewKeyDown);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Timer timer1;
+        private Label label1;
+        private Label Scor;
+        private Label nume;
     }
 }

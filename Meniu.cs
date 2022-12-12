@@ -53,5 +53,15 @@ namespace ProiectTetris2
             this.Hide();
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int nivel = 1;
+            if (radioButton2.Checked == true) nivel = 2;
+            else if (radioButton3.Checked == true) nivel = 3;
+            var joc = new Jocul(nivel);
+            joc.Show();
+            this.Hide();
+        }
     }
 }
