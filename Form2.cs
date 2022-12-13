@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.Json;
 
 namespace ProiectTetris2
 {
@@ -80,9 +81,12 @@ namespace ProiectTetris2
             timer1.Enabled = true;
             timer2.Enabled = true;
             if (Program.contActual != null)
-            {  
+            {
+                nume.Text = Program.contActual.username;
                 pictureBox2.Image = Image.FromFile(Program.listaProduselor.produse[Program.contActual.pozaProfil].pozaProdus);
             }
+            if (Program.contActual.produseCumparate.Contains(6))
+                reclame.Visible = false;
         }
 
         private void initializare()
@@ -611,6 +615,11 @@ namespace ProiectTetris2
                 {
                     timer1.Enabled = false;
                     pictureBox1.Show();
+                    int xpCastigat = Convert.ToInt32(Scor.Text) * 2/10;
+                    Program.contActual.xp += xpCastigat;
+                    Program.listaConturi.conturi[Program.contActual.id] = Program.contActual;
+                    System.IO.File.WriteAllText("C:/Users/Dell/Source/Repos/ProiectTetris4/Resources/Conturi.txt", JsonSerializer.Serialize(Program.listaConturi));
+                    MessageBox.Show($"Jocul s-a terminat. Ai castigat {xpCastigat} XP!");
                     ScoruriTop st = new ScoruriTop(Scor.Text);
                     st.Show();
                     this.Close();
@@ -641,6 +650,8 @@ namespace ProiectTetris2
 
         private void label2_MouseClick(object sender, MouseEventArgs e)
         {
+            label2.BackColor = Color.Black;
+            label2.ForeColor = Color.White;
             Meniu m = new Meniu();
             this.Close();
             m.Show();
@@ -662,14 +673,10 @@ namespace ProiectTetris2
 
         private void label2_MouseHover(object sender, EventArgs e)
         {
-            label2.BackColor = Color.Black;
-            label2.ForeColor = Color.White;
         }
 
         private void label2_MouseLeave(object sender, EventArgs e)
         {
-            label2.BackColor = Color.White;
-            label2.ForeColor = Color.Black;
-        }
+          }
     }
 }

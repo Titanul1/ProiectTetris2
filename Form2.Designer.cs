@@ -82,7 +82,7 @@
             // 
             this.pictureBox1.BackgroundImage = global::ProiectTetris2.Properties.Resources.Game_Over;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(0, -4);
+            this.pictureBox1.Location = new System.Drawing.Point(1, 1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(982, 863);
             this.pictureBox1.TabIndex = 4;
