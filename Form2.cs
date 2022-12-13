@@ -84,9 +84,13 @@ namespace ProiectTetris2
             {
                 nume.Text = Program.contActual.username;
                 pictureBox2.Image = Image.FromFile(Program.listaProduselor.produse[Program.contActual.pozaProfil].pozaProdus);
+                if (Program.contActual.produseCumparate.Contains(6)) reclame.Visible = false;
+                if (Program.contActual.produseCumparate.Contains(7)) Bomba.Visible = true;
+                if (Program.contActual.produseCumparate.Contains(8)) LaComanda.Visible = true;
+                if (Program.contActual.produseCumparate.Contains(9)) Skip.Visible = true;
+                if (Program.contActual.produseCumparate.Contains(10)) EliminaRand.Visible = true;
+                if (Program.contActual.produseCumparate.Contains(11)) Laser.Visible = true;
             }
-            if (Program.contActual.produseCumparate.Contains(6))
-                reclame.Visible = false;
         }
 
         private void initializare()
@@ -259,6 +263,7 @@ namespace ProiectTetris2
                         pr = propus.rand + J[con][j].Item1;
                         pc = propus.col + J[con][j].Item2;
                         if (pr == 20) return true;
+                    
                         for (int i = spatiulOcupat.Count - 1; i >= 0; i--)
                         {
                             if (pr == spatiulOcupat[i].rand && pc == spatiulOcupat[i].col)
@@ -657,6 +662,83 @@ namespace ProiectTetris2
             m.Show();
         }
 
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            spatiulOcupat.Clear();
+            Bomba.Visible = false;
+            Program.contActual.produseCumparate.Remove(7);
+            Program.listaConturi.conturi[Program.contActual.id] = Program.contActual;
+            System.IO.File.WriteAllText("C:/Users/Dell/Source/Repos/ProiectTetris4/Resources/Conturi.txt", JsonSerializer.Serialize(Program.listaConturi));
+
+        }
+
+        private void LaComanda_Click(object sender, EventArgs e)
+        {
+            forma.rand = 0;
+            forma.col = 4;
+            forma.config = 0;
+            forma.tipForma = "bagheta";
+            LaComanda.Visible = false;
+            Program.contActual.produseCumparate.Remove(8);
+            Program.listaConturi.conturi[Program.contActual.id] = Program.contActual;
+            System.IO.File.WriteAllText("C:/Users/Dell/Source/Repos/ProiectTetris4/Resources/Conturi.txt", JsonSerializer.Serialize(Program.listaConturi));
+        }
+
+        private void pictureBox3_Click_1(object sender, EventArgs e)
+        {
+            forma.rand = 0;
+            forma.col = 4;
+            forma.config = 0;
+            forma.tipForma = formaAleatorie();
+            Skip.Visible = false;
+            Program.contActual.produseCumparate.Remove(9);
+            Program.listaConturi.conturi[Program.contActual.id] = Program.contActual;
+            System.IO.File.WriteAllText("C:/Users/Dell/Source/Repos/ProiectTetris4/Resources/Conturi.txt", JsonSerializer.Serialize(Program.listaConturi));
+        }
+        private void EliminaRand_Click(object sender, EventArgs e)
+        {
+            timer1.Enabled = false;
+            for (int i = 0; i < spatiulOcupat.Count; i++)
+            {
+                if (spatiulOcupat[i].rand == 19)
+                {
+                    spatiulOcupat.RemoveAt(i);
+                    MessageBox.Show("removed something?");
+                    i--;
+                }
+                else
+                {
+                    Punct inlocuire = new Punct(spatiulOcupat[i].rand+1, spatiulOcupat[i].col, spatiulOcupat[i].culoare);
+                    spatiulOcupat[i] = inlocuire;
+                }
+            }
+            timer1.Enabled = true;
+            EliminaRand.Visible = false;
+            Program.contActual.produseCumparate.Remove(10);
+            Program.listaConturi.conturi[Program.contActual.id] = Program.contActual;
+            System.IO.File.WriteAllText("C:/Users/Dell/Source/Repos/ProiectTetris4/Resources/Conturi.txt", JsonSerializer.Serialize(Program.listaConturi));
+        }
+        private void Laser_Click(object sender, EventArgs e)
+        {
+            timer1.Enabled = false;
+            int colLaserat = forma.col;
+
+            for (int i = 0; i < spatiulOcupat.Count; i++)
+            {
+                if (spatiulOcupat[i].col == colLaserat)
+                {
+                    spatiulOcupat.RemoveAt(i);
+                    i--;
+                }
+            }
+            timer1.Enabled = true;
+            Laser.Visible = false;
+            Program.contActual.produseCumparate.Remove(11);
+            Program.listaConturi.conturi[Program.contActual.id] = Program.contActual;
+            System.IO.File.WriteAllText("C:/Users/Dell/Source/Repos/ProiectTetris4/Resources/Conturi.txt", JsonSerializer.Serialize(Program.listaConturi));
+
+        }
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -678,5 +760,6 @@ namespace ProiectTetris2
         private void label2_MouseLeave(object sender, EventArgs e)
         {
           }
+
     }
 }
