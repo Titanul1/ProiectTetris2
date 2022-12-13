@@ -28,11 +28,15 @@ namespace ProiectTetris2
         {
 
             comboBox1.Visible = true;
-            for (int i = 0; i < Program.contActual.produseCumparate.Count && i < 6; i++) //6 pentru ca pana la 5 sunt produse de profil
+            for (int i = 0; i < Program.contActual.produseCumparate.Count; i++) //6 pentru ca pana la 5 sunt produse de profil
             {
+                
                 int indiceProdus = Program.contActual.produseCumparate[i];
-                string adaugaProdus = Program.listaProduselor.produse[indiceProdus].numeProdus;
-                comboBox1.Items.Add(adaugaProdus);
+                if (indiceProdus < 6)
+                {
+                    string adaugaProdus = Program.listaProduselor.produse[indiceProdus].numeProdus;
+                    comboBox1.Items.Add(adaugaProdus);
+                }
             }
         }
 
