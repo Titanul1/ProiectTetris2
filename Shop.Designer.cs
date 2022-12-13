@@ -487,7 +487,7 @@
             this.XPLB.BackColor = System.Drawing.Color.Transparent;
             this.XPLB.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.XPLB.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.XPLB.Location = new System.Drawing.Point(463, 252);
+            this.XPLB.Location = new System.Drawing.Point(481, 250);
             this.XPLB.Name = "XPLB";
             this.XPLB.Size = new System.Drawing.Size(28, 31);
             this.XPLB.TabIndex = 43;
@@ -499,7 +499,7 @@
             this.BaniLB.BackColor = System.Drawing.Color.Transparent;
             this.BaniLB.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BaniLB.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.BaniLB.Location = new System.Drawing.Point(463, 208);
+            this.BaniLB.Location = new System.Drawing.Point(481, 206);
             this.BaniLB.Name = "BaniLB";
             this.BaniLB.Size = new System.Drawing.Size(28, 31);
             this.BaniLB.TabIndex = 42;
@@ -511,11 +511,11 @@
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label13.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label13.Location = new System.Drawing.Point(389, 208);
+            this.label13.Location = new System.Drawing.Point(379, 206);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(78, 31);
+            this.label13.Size = new System.Drawing.Size(106, 31);
             this.label13.TabIndex = 44;
-            this.label13.Text = "Bani:";
+            this.label13.Text = "T-Gold:";
             this.label13.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label14
@@ -524,7 +524,7 @@
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label14.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label14.Location = new System.Drawing.Point(401, 252);
+            this.label14.Location = new System.Drawing.Point(419, 250);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(66, 31);
             this.label14.TabIndex = 45;

@@ -704,7 +704,6 @@ namespace ProiectTetris2
                 if (spatiulOcupat[i].rand == 19)
                 {
                     spatiulOcupat.RemoveAt(i);
-                    MessageBox.Show("removed something?");
                     i--;
                 }
                 else
