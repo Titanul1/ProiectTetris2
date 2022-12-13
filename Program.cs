@@ -28,7 +28,7 @@ namespace ProiectTetris2
         {
             int prodID { get; set; }
             string numeProdus { get; set; }
-            string pozaProdus { get; set; }
+            public string pozaProdus { get; set; }
             int pretBani { get; set; }
             int pretXP { get; set; }
         }

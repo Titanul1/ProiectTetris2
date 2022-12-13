@@ -82,7 +82,7 @@
             // 
             this.pictureBox1.BackgroundImage = global::ProiectTetris2.Properties.Resources.Game_Over;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(0, -4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(982, 863);
             this.pictureBox1.TabIndex = 4;
@@ -107,15 +107,19 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(807, 748);
+            this.label2.Location = new System.Drawing.Point(806, 758);
             this.label2.Name = "label2";
             this.label2.Padding = new System.Windows.Forms.Padding(20);
             this.label2.Size = new System.Drawing.Size(156, 82);
             this.label2.TabIndex = 6;
             this.label2.Text = "Inapoi";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             this.label2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label2_MouseClick);
+            this.label2.MouseLeave += new System.EventHandler(this.label2_MouseLeave);
+            this.label2.MouseHover += new System.EventHandler(this.label2_MouseHover);
             // 
             // pictureBox2
             // 

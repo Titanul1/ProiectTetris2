@@ -36,7 +36,7 @@ namespace ProiectTetris2
         public static List<List<(int, int)>> J = new List<List<(int, int)>>();
         public static List<List<(int, int)>> S = new List<List<(int, int)>>();
         public static List<List<(int, int)>> Z = new List<List<(int, int)>>();
-        string[] reclamele = System.IO.File.ReadAllLines("C:\\Users\\liver\\Source\\Repos\\ProiectTetris2\\Resources\\reclame.txt");
+        string[] reclamele = System.IO.File.ReadAllLines("C:/Users/Dell/Source/Repos/ProiectTetris4/Resources/reclame.txt");
 
         public struct Punct
         {
@@ -80,9 +80,8 @@ namespace ProiectTetris2
             timer1.Enabled = true;
             timer2.Enabled = true;
             if (Program.contActual != null)
-            {   
-                string[] pozepath = System.IO.File.ReadAllLines("C:\\Users\\liver\\Source\\Repos\\ProiectTetris2\\Resources\\AdresePozelor.txt");
-                pictureBox2.Image = Image.FromFile(pozepath[Program.contActual.pozaProfil]);
+            {  
+                pictureBox2.Image = Image.FromFile(Program.listaProduselor.produse[Program.contActual.pozaProfil].pozaProdus);
             }
         }
 
@@ -654,6 +653,23 @@ namespace ProiectTetris2
         private void textBox1_MouseClick(object sender, MouseEventArgs e)
         {
 
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_MouseHover(object sender, EventArgs e)
+        {
+            label2.BackColor = Color.Black;
+            label2.ForeColor = Color.White;
+        }
+
+        private void label2_MouseLeave(object sender, EventArgs e)
+        {
+            label2.BackColor = Color.White;
+            label2.ForeColor = Color.Black;
         }
     }
 }

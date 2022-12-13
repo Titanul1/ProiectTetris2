@@ -30,12 +30,12 @@ namespace ProiectTetris2
 
         private void Meniu_Load(object sender, EventArgs e)
         {
-            string[] pozeadrese = System.IO.File.ReadAllLines("C:\\Users\\liver\\Source\\Repos\\ProiectTetris2\\Resources\\AdresePozelor.txt");
+       //     string[] pozeadrese = System.IO.File.ReadAllLines("C:\\Users\\liver\\Source\\Repos\\ProiectTetris2\\Resources\\AdresePozelor.txt");
             if (Program.contActual != null)
             {
                 nume.Text = "Buna, " + Program.contActual.username + "!";
                 int codpoza = Program.contActual.pozaProfil;
-                pictureBox1.Image = Image.FromFile(pozeadrese[codpoza]);
+                pictureBox1.Image = Image.FromFile(Program.listaProduselor.produse[Program.contActual.pozaProfil].pozaProdus);
                 BaniLB.Text = "Bani: " + Program.contActual.bani;
                 XPLB.Text = "XP: " + Program.contActual.xp;
             }

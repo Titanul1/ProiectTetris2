@@ -77,10 +77,10 @@
             this.radioButton3.AutoSize = true;
             this.radioButton3.Location = new System.Drawing.Point(41, 79);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(71, 19);
+            this.radioButton3.Size = new System.Drawing.Size(50, 19);
             this.radioButton3.TabIndex = 2;
             this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Nivelul 3";
+            this.radioButton3.Text = "Greu";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // radioButton2
@@ -88,10 +88,10 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(41, 54);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(71, 19);
+            this.radioButton2.Size = new System.Drawing.Size(59, 19);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Nivelul 2";
+            this.radioButton2.Text = "Mediu";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // radioButton1
@@ -99,10 +99,10 @@
             this.radioButton1.AutoSize = true;
             this.radioButton1.Location = new System.Drawing.Point(41, 29);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(71, 19);
+            this.radioButton1.Size = new System.Drawing.Size(49, 19);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Nivelul 1";
+            this.radioButton1.Text = "Usor";
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
@@ -174,22 +174,28 @@
             // BaniLB
             // 
             this.BaniLB.AutoSize = true;
+            this.BaniLB.BackColor = System.Drawing.Color.Transparent;
             this.BaniLB.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BaniLB.Location = new System.Drawing.Point(173, 330);
+            this.BaniLB.ForeColor = System.Drawing.Color.White;
+            this.BaniLB.Location = new System.Drawing.Point(212, 357);
             this.BaniLB.Name = "BaniLB";
             this.BaniLB.Size = new System.Drawing.Size(99, 31);
             this.BaniLB.TabIndex = 9;
             this.BaniLB.Text = "Bani: 0";
+            this.BaniLB.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // XPLB
             // 
             this.XPLB.AutoSize = true;
+            this.XPLB.BackColor = System.Drawing.Color.Transparent;
             this.XPLB.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.XPLB.Location = new System.Drawing.Point(173, 373);
+            this.XPLB.ForeColor = System.Drawing.Color.White;
+            this.XPLB.Location = new System.Drawing.Point(212, 394);
             this.XPLB.Name = "XPLB";
             this.XPLB.Size = new System.Drawing.Size(80, 31);
             this.XPLB.TabIndex = 10;
             this.XPLB.Text = "XP: 0";
+            this.XPLB.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Meniu
             // 

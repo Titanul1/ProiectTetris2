@@ -55,7 +55,7 @@ namespace ProiectTetris2
                 nouCont.produseCumparate = new List<int>();
                 nouCont.produseCumparate.Add(0);
                 Program.listaConturi.conturi.Add(nouCont);
-                System.IO.File.WriteAllText("C:\\Users\\liver\\Source\\Repos\\ProiectTetris2\\Resources\\Conturi.txt", JsonSerializer.Serialize(Program.listaConturi));
+                System.IO.File.WriteAllText("C:/Users/Dell/Source/Repos/ProiectTetris4/Resources/Conturi.txt", JsonSerializer.Serialize(Program.listaConturi));
                 MessageBox.Show("Contul a fost creat!");
                 this.Close();
                 Form1 f1 = new Form1();
