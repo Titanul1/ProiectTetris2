@@ -27,10 +27,10 @@ namespace ProiectTetris2
         public class Produs
         {
             int prodID { get; set; }
-            string numeProdus { get; set; }
+            public string numeProdus { get; set; }
             public string pozaProdus { get; set; }
-            int pretBani { get; set; }
-            int pretXP { get; set; }
+            public int pretBani { get; set; }
+            public int pretXP { get; set; }
         }
 
         public class Produse

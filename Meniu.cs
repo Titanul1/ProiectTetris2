@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.Json;
+using Microsoft.VisualBasic;
 
 namespace ProiectTetris2
 {
@@ -18,26 +19,47 @@ namespace ProiectTetris2
             InitializeComponent();
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button6_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
+        private void populeazaComboBox()
+        {
+
+            comboBox1.Visible = true;
+            for (int i = 0; i < Program.contActual.produseCumparate.Count && i < 6; i++) //6 pentru ca pana la 5 sunt produse de profil
+            {
+                int indiceProdus = Program.contActual.produseCumparate[i];
+                string adaugaProdus = Program.listaProduselor.produse[indiceProdus].numeProdus;
+                comboBox1.Items.Add(adaugaProdus);
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selected = comboBox1.SelectedItem.ToString();
+            for (int i = 0; i < 6; i++)
+            {
+                if (Program.listaProduselor.produse[i].numeProdus == selected)
+                {
+                    pictureBox1.Image = Image.FromFile(Program.listaProduselor.produse[i].pozaProdus);
+                    Program.listaConturi.conturi[Program.contActual.id].pozaProfil = i;
+                    System.IO.File.WriteAllText("C:/Users/Dell/Source/Repos/ProiectTetris4/Resources/Conturi.txt", JsonSerializer.Serialize(Program.listaConturi));
+                }
+            }
+
+        }
+
         private void Meniu_Load(object sender, EventArgs e)
         {
-       //     string[] pozeadrese = System.IO.File.ReadAllLines("C:\\Users\\liver\\Source\\Repos\\ProiectTetris2\\Resources\\AdresePozelor.txt");
             if (Program.contActual != null)
             {
                 nume.Text = "Buna, " + Program.contActual.username + "!";
-                int codpoza = Program.contActual.pozaProfil;
                 pictureBox1.Image = Image.FromFile(Program.listaProduselor.produse[Program.contActual.pozaProfil].pozaProdus);
                 BaniLB.Text = "Bani: " + Program.contActual.bani;
                 XPLB.Text = "XP: " + Program.contActual.xp;
+                populeazaComboBox();
             }
             else
             {
@@ -79,8 +101,31 @@ namespace ProiectTetris2
             this.Close();
             sh.Show();
         }
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string parolaPropusa = Interaction.InputBox("Ce parola vrei?", "Schimba parola");
+            if (parolaPropusa != null)
+            {
+                Program.listaConturi.conturi[Program.contActual.id].parola = parolaPropusa;
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+                System.IO.File.WriteAllText("C:/Users/Dell/Source/Repos/ProiectTetris4/Resources/Conturi.txt", JsonSerializer.Serialize(Program.listaConturi));
+            }
+            else
+            {
+                MessageBox.Show("N-ai tastat o parola.");
+            }
+        }
+            private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void XPLB_Click(object sender, EventArgs e)
         {
 
         }
