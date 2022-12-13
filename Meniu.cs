@@ -30,7 +30,7 @@ namespace ProiectTetris2
 
         private void Meniu_Load(object sender, EventArgs e)
         {
-            string[] pozeadrese = System.IO.File.ReadAllLines("C:/Users/Dell/source/repos/ProiectTetris2/AdresePozelor.txt");
+            string[] pozeadrese = System.IO.File.ReadAllLines("C:\\Users\\liver\\Source\\Repos\\ProiectTetris2\\Resources\\AdresePozelor.txt");
             if (Program.contActual != null)
             {
                 nume.Text = "Buna, " + Program.contActual.username + "!";

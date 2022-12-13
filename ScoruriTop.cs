@@ -49,7 +49,7 @@ namespace ProiectTetris2
         {
             Label[] nume = {label2, label3, label4, label5, label6, label7, label8, label9, label10, label11 };
             Label[] scorEtichete = { label21, label20, label19, label18, label17, label16, label15, label14, label13,label12};
-            string jsonString = System.IO.File.ReadAllText("C:/Users/Dell/source/repos/ProiectTetris/Scoruri.txt");
+            string jsonString = System.IO.File.ReadAllText("C:\\Users\\liver\\Source\\Repos\\ProiectTetris2\\Resources\\Scoruri.txt");
             Scoruri scoruri = JsonSerializer.Deserialize<Scoruri>(jsonString);
             int locul = loculScor(scoruri);
             if (locul < 10)
@@ -65,7 +65,7 @@ namespace ProiectTetris2
                 nume[i].Text = scoruri.Players[i].id;
                 scorEtichete[i].Text = (scoruri.Players[i].scor).ToString();
             }
-            System.IO.File.WriteAllText("C:/Users/Dell/source/repos/ProiectTetris/Scoruri.txt", JsonSerializer.Serialize(scoruri));
+            System.IO.File.WriteAllText("C:\\Users\\liver\\Source\\Repos\\ProiectTetris2\\Resources\\Scoruri.txt", JsonSerializer.Serialize(scoruri));
 
 
         }

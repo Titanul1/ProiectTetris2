@@ -48,10 +48,10 @@ namespace ProiectTetris2
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            string JSONconturi = System.IO.File.ReadAllText("C:/Users/Dell/source/repos/ProiectTetris2/Conturi.txt");
+            string JSONconturi = System.IO.File.ReadAllText("C:\\Users\\liver\\Source\\Repos\\ProiectTetris2\\Resources\\Conturi.txt");
             Program.Conturi conturi = JsonSerializer.Deserialize<Program.Conturi>(JSONconturi);
             Program.listaConturi = conturi;
-            string JSONproduse = System.IO.File.ReadAllText("C:/Users/Dell/source/repos/ProiectTetris2/produse.txt");
+            string JSONproduse = System.IO.File.ReadAllText("C:\\Users\\liver\\Source\\Repos\\ProiectTetris2\\Resources\\produse.txt");
             Program.Produse clasaProduse = JsonSerializer.Deserialize<Program.Produse>(JSONproduse);
             Program.listaProduselor = clasaProduse;
         }

@@ -124,29 +124,14 @@
   <data name="Fara reclame" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fara reclame.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="profil4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\profil4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="meniu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\meniu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="profil2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\profil2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="shop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\shop.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="profil5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\profil5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Game Over" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Game Over.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="profil3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\profil3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="profil1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\profil1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Skip" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Skip.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -156,9 +141,6 @@
   </data>
   <data name="Laser" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Laser.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="profil31" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\profil3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Bagheta" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Bagheta.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -174,5 +156,23 @@
   </data>
   <data name="T-Gold" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\T-Gold.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="profil1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\profil1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="profil2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\profil2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="profil3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\profil0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="profil31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\profil3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="profil4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\profil4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="profil5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\profil5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

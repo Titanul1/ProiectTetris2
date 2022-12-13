@@ -36,6 +36,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.Gata = new System.Windows.Forms.Button();
             this.inapoi = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // userN
@@ -126,6 +128,16 @@
             this.inapoi.UseVisualStyleBackColor = false;
             this.inapoi.Click += new System.EventHandler(this.inapoi_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ProiectTetris2.Properties.Resources.W;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(507, 496);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
             // W
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -140,10 +152,12 @@
             this.Controls.Add(this.pw2);
             this.Controls.Add(this.pw1);
             this.Controls.Add(this.userN);
+            this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
             this.Name = "W";
             this.Text = "Inscriere";
             this.Load += new System.EventHandler(this.W_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -159,5 +173,6 @@
         private Label label3;
         private Button Gata;
         private Button inapoi;
+        private PictureBox pictureBox1;
     }
 }

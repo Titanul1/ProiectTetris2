@@ -36,7 +36,7 @@ namespace ProiectTetris2
         public static List<List<(int, int)>> J = new List<List<(int, int)>>();
         public static List<List<(int, int)>> S = new List<List<(int, int)>>();
         public static List<List<(int, int)>> Z = new List<List<(int, int)>>();
-        string[] reclamele = System.IO.File.ReadAllLines("C:/Users/Dell/source/repos/ProiectTetris2/reclame.txt");
+        string[] reclamele = System.IO.File.ReadAllLines("C:\\Users\\liver\\Source\\Repos\\ProiectTetris2\\Resources\\reclame.txt");
 
         public struct Punct
         {
@@ -81,7 +81,7 @@ namespace ProiectTetris2
             timer2.Enabled = true;
             if (Program.contActual != null)
             {   
-                string[] pozepath = System.IO.File.ReadAllLines("C:/Users/Dell/source/repos/ProiectTetris2/AdresePozelor.txt");
+                string[] pozepath = System.IO.File.ReadAllLines("C:\\Users\\liver\\Source\\Repos\\ProiectTetris2\\Resources\\AdresePozelor.txt");
                 pictureBox2.Image = Image.FromFile(pozepath[Program.contActual.pozaProfil]);
             }
         }
