@@ -156,11 +156,6 @@ namespace ProiectTetris2
             toateButoanele(button4, 1);
         }
 
-        private void pictureBox11_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button5_Click(object sender, EventArgs e)
         {
             toateButoanele(button5, 2);
@@ -211,6 +206,10 @@ namespace ProiectTetris2
         private void button8_Click(object sender, EventArgs e)
         {
             toateButoanele(button8, 11);
+        }
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

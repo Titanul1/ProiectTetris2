@@ -63,6 +63,7 @@ namespace ProiectTetris2
                 pictureBox1.Image = Image.FromFile(Program.listaProduselor.produse[Program.contActual.pozaProfil].pozaProdus);
                 BaniLB.Text = "Bani: " + Program.contActual.bani;
                 XPLB.Text = "XP: " + Program.contActual.xp;
+                button4.Visible = true;
                 populeazaComboBox();
             }
             else
